@@ -26,8 +26,9 @@ In this way, you can very easily extend the lifetime of your upload without wast
 1. You need Python 3 environment to execute the script. You can easily install it from [here](https://www.python.org/downloads/).
 2. Install the python dependencies:
 ```
-	pip install requirements.txt
+	pip install -r requirements.txt
 ```
+(Make sure you are using right version of requirements, or you can use virtualenv.) 
 
 ### Options:
 
