@@ -104,7 +104,7 @@ def load_args():
     return parser.parse_args()
 
 
-def down_links(success, failed, outfile):
+def down_links(success, failed):
     for link in success:
         print(f'Link:{link}')
         PyAria2().addUri([link])
@@ -143,5 +143,5 @@ if __name__ == "__main__":
     links, fails = zippy.parse_links(urls)
     end = time.time()
     print('Time taken: {:.3f}s'.format(end - start))
-    down_links(links, fails, args.outfile)
+    down_links(links, fails)
 
